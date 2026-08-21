@@ -3,11 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Controle Suas Vendas - Simples e Rápido</title>
-    <!-- Tailwind CSS carrega todo o design direto aqui -->
+    <title>Gestão App - Controle Suas Vendas</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* Adiciona um leve efeito de brilho e flutuação nos botões principais */
         .cta-button {
             transition: all 0.3s ease;
         }
@@ -23,22 +21,22 @@
     <nav class="bg-white border-b border-gray-100">
         <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
             <div class="flex items-center gap-3">
-                <!-- Substitua pelo caminho da sua imagem de logo, ex: assets/logo.png -->
-                <img src="assets/logo.png" alt="Gestão App Logo" class="h-10 w-auto">
-                <span class="text-sm text-slate-500">Gestão fácil e descomplicada.</span>
+                <!-- LOGO: Confirme se o nome exato é esse -->
+                <img src="gestao_app_logo_transparente.jpg" alt="Gestão App Logo" class="h-10 w-auto">
+                <span class="text-sm text-slate-500 hidden sm:inline-block">Gestão fácil e descomplicada.</span>
             </div>
         </div>
     </nav>
 
     <!-- 2. DOBRA PRINCIPAL (HERO SECTION) -->
     <header class="bg-slate-50">
-        <div class="max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div class="max-w-7xl mx-auto px-6 py-16 md:py-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div class="text-center md:text-left">
-                <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
+                <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
                     Gestão de estoque simples<br>
                     <span class="text-orange-600">Controle de caixa descomplicado</span>
                 </h1>
-                <p class="text-xl text-slate-600 mb-10 max-w-2xl mx-auto md:mx-0">
+                <p class="text-lg md:text-xl text-slate-600 mb-10 max-w-2xl mx-auto md:mx-0">
                     Mais clareza para acompanhar o seu dia a dia. Abandone o caderninho e as planilhas. O controle do seu negócio na palma da mão.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
@@ -48,80 +46,61 @@
                 </div>
             </div>
             <div class="flex justify-center">
-                <!-- Substitua pelo caminho da sua imagem hero principal (aquela com o caixa e a seta laranja), ex: assets/hero-vendas.png -->
-                <img src="assets/hero-vendas.png" alt="Painel de controle e estoque" class="max-w-full h-auto drop-shadow-2xl">
+                <!-- HERO: Usando o nome exato que aparece no seu print -->
+                <img src="hero-vendas.png" alt="Painel de controle e estoque" class="max-w-full h-auto drop-shadow-2xl rounded-2xl">
             </div>
         </div>
     </header>
 
-    <!-- 3. BENEFÍCIOS (Ícones 3D Individuais) -->
-    <section class="py-24 px-6 bg-white">
+    <!-- 3. BENEFÍCIOS -->
+    <section class="py-20 px-6 bg-white">
         <div class="max-w-7xl mx-auto text-center">
-            <h2 class="text-4xl font-bold mb-16 text-slate-900">Tudo o que você precisa para crescer</h2>
+            <h2 class="text-3xl md:text-4xl font-bold mb-16 text-slate-900">Tudo o que você precisa para crescer</h2>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-                <!-- Benefício 1 (Lucro) -->
-                <div class="bg-white p-10 rounded-3xl shadow-xl border border-gray-100 flex flex-col items-center">
-                    <!-- Substitua pelo caminho do ícone de lucro (moedas e gaveta), ex: assets/icone-lucro.png -->
-                    <img src="assets/icone-lucro.png" alt="Ícone Lucro" class="h-24 w-auto mb-6">
+                <!-- Benefício 1 -->
+                <div class="bg-white p-8 rounded-3xl shadow-xl border border-gray-100 flex flex-col items-center">
+                    <!-- ÍCONE CAIXA/LUCRO -->
+                    <img src="gestao_app_carrossel_slide_3.png" alt="Controle de Caixa" class="w-full h-auto mb-6 rounded-xl">
                     <h3 class="text-2xl font-bold mb-4">Descubra seu Lucro Real</h3>
-                    <p class="text-slate-600 text-lg">Não confunda dinheiro no caixa com lucro. Saiba exatamente quanto você está ganhando por dia, semana e mês com nossos relatórios precisos.</p>
+                    <p class="text-slate-600 text-lg">Saiba exatamente quanto você está ganhando por dia, semana e mês com nossos relatórios precisos.</p>
                 </div>
                 
-                <!-- Benefício 2 (Estoque) -->
-                <div class="bg-white p-10 rounded-3xl shadow-xl border border-gray-100 flex flex-col items-center">
-                    <!-- Substitua pelo caminho do ícone de estoque (caixas), ex: assets/icone-estoque.png -->
-                    <img src="assets/icone-estoque.png" alt="Ícone Estoque" class="h-24 w-auto mb-6">
+                <!-- Benefício 2 -->
+                <div class="bg-white p-8 rounded-3xl shadow-xl border border-gray-100 flex flex-col items-center">
+                    <!-- ÍCONE ESTOQUE -->
+                    <img src="gestao_app_carrossel_slide_2.png" alt="Gestão de Estoque" class="w-full h-auto mb-6 rounded-xl">
                     <h3 class="text-2xl font-bold mb-4">Estoque Inteligente</h3>
-                    <p class="text-slate-600 text-lg">Cadastre seus produtos, acompanhe as quantidades e saiba o valor total em dinheiro que você tem parado no seu estoque.</p>
+                    <p class="text-slate-600 text-lg">Cadastre seus produtos e saiba o valor total em dinheiro que você tem parado no seu estoque.</p>
                 </div>
 
-                <!-- Benefício 3 (Vendas) -->
-                <div class="bg-white p-10 rounded-3xl shadow-xl border border-gray-100 flex flex-col items-center">
-                    <!-- Substitua pelo caminho do ícone de vendas (caixa registradora), ex: assets/icone-vendas.png -->
-                    <img src="assets/icone-vendas.png" alt="Ícone Vendas" class="h-24 w-auto mb-6">
+                <!-- Benefício 3 -->
+                <div class="bg-white p-8 rounded-3xl shadow-xl border border-gray-100 flex flex-col items-center">
+                    <!-- ÍCONE PROCESSO COMPLETO -->
+                    <img src="gestao_app_carrossel_capa.png" alt="Do estoque ao caixa" class="w-full h-auto mb-6 rounded-xl">
                     <h3 class="text-2xl font-bold mb-4">Vendas em Segundos</h3>
-                    <p class="text-slate-600 text-lg">Um painel de controle limpo e intuitivo. Registre suas vendas com poucos toques e atualize seu caixa instantaneamente.</p>
+                    <p class="text-slate-600 text-lg">Um painel limpo e intuitivo. Registre vendas com poucos toques e atualize seu caixa instantaneamente.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 4. PROVA SOCIAL (Testemunho) -->
-    <section class="bg-slate-900 text-white py-24 px-6 relative overflow-hidden">
-        <!-- Padrão de pontos sutil de fundo (opcional, adicione a imagem correspondente se quiser) -->
-        <div class="absolute inset-0 opacity-10">
-            <img src="assets/pattern-dots.png" alt="Pattern" class="w-full h-full object-cover">
-        </div>
-        
-        <div class="max-w-5xl mx-auto text-center relative z-10">
-            <h2 class="text-4xl font-bold mb-12">Feito para quem faz acontecer</h2>
-            <blockquote class="text-2xl italic text-slate-300 mb-8 max-w-3xl mx-auto leading-relaxed relative">
-                <span class="text-8xl text-orange-600 absolute -top-10 -left-10 opacity-50">“</span>
-                "Antes eu perdia horas fechando o caixa e não sabia se estava tendo lucro. Agora, com 2 toques no celular, eu vejo meu lucro real e o que preciso repor no estoque!"
-                <span class="text-8xl text-orange-600 absolute -bottom-16 -right-10 opacity-50">”</span>
-            </blockquote>
-            <p class="font-bold text-xl text-orange-500">- Empreendedor de Sucesso</p>
-        </div>
-    </section>
-
-    <!-- 5. RODAPÉ E CTA FINAL (Conversão Maximizada) -->
-    <footer class="bg-white text-center py-24 px-6 relative">
-        <!-- Elemento visual final com a seta grande laranja apontando para o botão -->
-        <div class="max-w-5xl mx-auto flex flex-col items-center">
-            <!-- Substitua pelo caminho da imagem CTA final (aquela com o caixa e a seta laranja grande), ex: assets/cta-final.png -->
-            <img src="assets/cta-final.png" alt="Simplifique sua gestão" class="max-w-lg h-auto mb-12 drop-shadow-xl">
+    <!-- 4. RODAPÉ E CTA FINAL -->
+    <footer class="bg-white text-center py-20 px-6 relative border-t-2 border-gray-50">
+        <div class="max-w-3xl mx-auto flex flex-col items-center">
             
-            <h2 class="text-4xl font-bold mb-6 text-slate-900">Pronto para organizar suas vendas?</h2>
-            <p class="text-slate-600 text-xl mb-10 max-w-2xl">Simplifique sua rotina e veja seu negócio dar lucro de verdade. Junte-se a centenas de empreendedores.</p>
+            <!-- IMAGEM FINAL DO STORY -->
+            <img src="gestao_app_story_final.png" alt="Simplifique sua gestão" class="w-full max-w-sm h-auto mb-10 rounded-2xl shadow-lg">
             
-            <!-- ====== BOTÃO DE CONVERSÃO FINAL ====== -->
-            <a href="COLE_SEU_LINK_DE_COMPRA_AQUI" class="cta-button bg-orange-600 hover:bg-orange-500 text-white font-bold py-5 px-12 rounded-full text-2xl shadow-2xl transition duration-300 inline-block mb-4">
-                Comprar Acesso Agora
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 text-slate-900">Pronto para organizar suas vendas?</h2>
+            <p class="text-slate-600 text-xl mb-10">Simplifique sua rotina e veja seu negócio dar lucro de verdade.</p>
+            
+            <a href="COLE_SEU_LINK_DE_COMPRA_AQUI" class="cta-button bg-orange-600 hover:bg-orange-500 text-white font-bold py-5 px-12 rounded-full text-2xl shadow-2xl transition duration-300 inline-block mb-4 w-full sm:w-auto">
+                Baixar Aplicativo Agora
             </a>
             
             <p class="text-sm text-slate-500 mb-16 flex items-center gap-2 justify-center">
-                <span class="text-orange-500">🔒</span> Pagamento 100% Seguro. Liberação imediata após o pagamento.
+                <span class="text-orange-500">🔒</span> Acesso imediato após o cadastro.
             </p>
             
             <div class="text-slate-400 text-sm border-t border-gray-100 pt-8 mt-8 w-full">
