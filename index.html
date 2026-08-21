@@ -17,13 +17,10 @@
 </head>
 <body class="bg-white text-slate-900 font-sans antialiased">
 
-    <!-- 1. BARRA SUPERIOR E LOGO -->
-    <nav class="bg-white border-b border-gray-100">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-            <div class="flex items-center gap-3">
-                <img src="logo.png" alt="Gestão App Logo" class="h-10 w-auto">
-                <span class="text-sm text-slate-500 hidden sm:inline-block">Gestão fácil e descomplicada.</span>
-            </div>
+    <!-- 1. BARRA SUPERIOR (LOGO MAIOR E CENTRALIZADA) -->
+    <nav class="bg-white border-b border-gray-100 py-6 md:py-8">
+        <div class="max-w-7xl mx-auto px-6 flex justify-center">
+            <img src="logo.png" alt="Gestão App Logo" class="h-24 md:h-32 w-auto object-contain">
         </div>
     </nav>
 
@@ -31,6 +28,10 @@
     <header class="bg-slate-50">
         <div class="max-w-7xl mx-auto px-6 py-16 md:py-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div class="text-center md:text-left">
+                <!-- Destaque "15 dias grátis" já no topo -->
+                <div class="inline-block bg-orange-100 text-orange-700 font-bold px-4 py-2 rounded-full text-sm mb-6 uppercase tracking-wider">
+                    🎁 Teste 15 Dias Grátis
+                </div>
                 <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
                     Gestão de estoque simples<br>
                     <span class="text-orange-600">Controle de caixa descomplicado</span>
@@ -38,10 +39,13 @@
                 <p class="text-lg md:text-xl text-slate-600 mb-10 max-w-2xl mx-auto md:mx-0">
                     Mais clareza para acompanhar o seu dia a dia. Abandone o caderninho e as planilhas. O controle do seu negócio na palma da mão.
                 </p>
-                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                    <a href="COLE_SEU_LINK_DE_COMPRA_AQUI" class="cta-button bg-orange-600 hover:bg-orange-500 text-white font-bold py-4 px-10 rounded-full text-xl shadow-lg transition animate-bounce">
-                        Conheça a Gestão App
+                <div class="flex flex-col items-center md:items-start">
+                    <a href="COLE_SEU_LINK_DE_COMPRA_AQUI" class="cta-button bg-orange-600 hover:bg-orange-500 text-white font-bold py-4 px-10 rounded-full text-xl shadow-lg transition animate-bounce text-center w-full sm:w-auto">
+                        Testar Grátis por 15 Dias
                     </a>
+                    <p class="mt-4 text-sm text-slate-500 font-medium flex items-center gap-1">
+                        <span class="text-green-500 font-bold">✓</span> Sem compromisso. Cancele quando quiser.
+                    </p>
                 </div>
             </div>
             <div class="flex justify-center">
@@ -56,19 +60,19 @@
             <h2 class="text-3xl md:text-4xl font-bold mb-16 text-slate-900">Tudo o que você precisa para crescer</h2>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-                <div class="bg-white p-8 rounded-3xl shadow-xl border border-gray-100 flex flex-col items-center">
+                <div class="bg-white p-8 rounded-3xl shadow-xl border border-gray-100 flex flex-col items-center hover:-translate-y-2 transition-transform duration-300">
                     <img src="icone-lucro.png" alt="Controle de Caixa" class="w-full h-auto mb-6 rounded-xl">
                     <h3 class="text-2xl font-bold mb-4">Descubra seu Lucro Real</h3>
                     <p class="text-slate-600 text-lg">Saiba exatamente quanto você está ganhando por dia, semana e mês com nossos relatórios precisos.</p>
                 </div>
                 
-                <div class="bg-white p-8 rounded-3xl shadow-xl border border-gray-100 flex flex-col items-center">
+                <div class="bg-white p-8 rounded-3xl shadow-xl border border-gray-100 flex flex-col items-center hover:-translate-y-2 transition-transform duration-300">
                     <img src="icone-estoque.png" alt="Gestão de Estoque" class="w-full h-auto mb-6 rounded-xl">
                     <h3 class="text-2xl font-bold mb-4">Estoque Inteligente</h3>
                     <p class="text-slate-600 text-lg">Cadastre seus produtos e saiba o valor total em dinheiro que você tem parado no seu estoque.</p>
                 </div>
 
-                <div class="bg-white p-8 rounded-3xl shadow-xl border border-gray-100 flex flex-col items-center">
+                <div class="bg-white p-8 rounded-3xl shadow-xl border border-gray-100 flex flex-col items-center hover:-translate-y-2 transition-transform duration-300">
                     <img src="icone-vendas.png" alt="Do estoque ao caixa" class="w-full h-auto mb-6 rounded-xl">
                     <h3 class="text-2xl font-bold mb-4">Vendas em Segundos</h3>
                     <p class="text-slate-600 text-lg">Um painel limpo e intuitivo. Registre vendas com poucos toques e atualize seu caixa instantaneamente.</p>
@@ -77,20 +81,60 @@
         </div>
     </section>
 
-    <!-- 4. RODAPÉ E CTA FINAL -->
+    <!-- 4. SEÇÃO: DEPOIMENTOS (PROVA SOCIAL) -->
+    <section class="py-24 px-6 bg-slate-50">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 text-slate-900">Quem usa, recomenda</h2>
+            <p class="text-xl text-slate-600 mb-16 max-w-2xl mx-auto">Veja o que os empreendedores estão achando da facilidade do Gestão App.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+                <!-- Depoimento 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+                    <div class="text-orange-500 text-2xl mb-4">★★★★★</div>
+                    <p class="text-slate-700 text-lg mb-6 italic">"O fim do caderninho! Agora eu consigo registrar as vendas na hora que o cliente paga, direto pelo celular. Muito prático e rápido."</p>
+                    <div>
+                        <p class="font-bold text-slate-900 text-lg">Marcos Silva</p>
+                        <p class="text-sm text-slate-500">Dono de Loja de Eletrônicos</p>
+                    </div>
+                </div>
+
+                <!-- Depoimento 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+                    <div class="text-orange-500 text-2xl mb-4">★★★★★</div>
+                    <p class="text-slate-700 text-lg mb-6 italic">"Eu vivia misturando o dinheiro do caixa com o meu dinheiro. Com o app, finalmente sei qual é o meu lucro real no final do mês."</p>
+                    <div>
+                        <p class="font-bold text-slate-900 text-lg">Ana Paula Costa</p>
+                        <p class="text-sm text-slate-500">Empreendedora de Moda</p>
+                    </div>
+                </div>
+
+                <!-- Depoimento 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+                    <div class="text-orange-500 text-2xl mb-4">★★★★★</div>
+                    <p class="text-slate-700 text-lg mb-6 italic">"O controle de estoque é fantástico. Quando um produto está acabando, eu já sei que preciso repor. Recomendo para todo mundo."</p>
+                    <div>
+                        <p class="font-bold text-slate-900 text-lg">Roberto Alves</p>
+                        <p class="text-sm text-slate-500">Distribuidora de Bebidas</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. RODAPÉ E CTA FINAL -->
     <footer class="bg-white text-center py-20 px-6 relative border-t-2 border-gray-50">
         <div class="max-w-3xl mx-auto flex flex-col items-center">
             <img src="gestao_app_story_final.png" alt="Simplifique sua gestão" class="w-full max-w-sm h-auto mb-10 rounded-2xl shadow-lg">
             
             <h2 class="text-3xl md:text-4xl font-bold mb-6 text-slate-900">Pronto para organizar suas vendas?</h2>
-            <p class="text-slate-600 text-xl mb-10">Simplifique sua rotina e veja seu negócio dar lucro de verdade.</p>
+            <p class="text-slate-600 text-xl mb-10">Baixe agora e tenha 15 dias inteiramente grátis para ver seu negócio dar lucro de verdade.</p>
             
             <a href="COLE_SEU_LINK_DE_COMPRA_AQUI" class="cta-button bg-orange-600 hover:bg-orange-500 text-white font-bold py-5 px-12 rounded-full text-2xl shadow-2xl transition duration-300 inline-block mb-4 w-full sm:w-auto">
-                Baixar Aplicativo Agora
+                Quero Meus 15 Dias Grátis
             </a>
             
-            <p class="text-sm text-slate-500 mb-16 flex items-center gap-2 justify-center">
-                <span class="text-orange-500">🔒</span> Acesso imediato após o cadastro.
+            <p class="text-sm text-slate-500 mb-16 flex items-center gap-2 justify-center font-medium">
+                <span class="text-green-500 text-lg">✓</span> Acesso imediato sem compromisso.
             </p>
             
             <div class="text-slate-400 text-sm border-t border-gray-100 pt-8 mt-8 w-full">
